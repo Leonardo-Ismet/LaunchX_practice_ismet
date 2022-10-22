@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria el bizcocho</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    
+        /* Estilo de header */
+        header {
+            float: left;
+            width: 80%;
+            height: 300px;
+            background-color: rgba(164, 204, 216, 0.801);
+            padding: 30px;
+            text-align: center;
+            text-decoration: #777;
+            font-size: 35px;
+            color: rgb(24, 4, 109);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(252, 253, 253);
+            padding: 20px;
+        }
+
+
+        nav ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            color: rgba(50, 50, 131, 0.836);
+            text-decoration: none;
+            text-align: justify;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: auto;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Headings -->
+        <h1>Pasteleria El Bizcocho</h1>
+        <h5>Elaborando los más ricos pasteles de la región, desde 2010</h5>
+    </header>
+
+    <section>
+        <nav>
+            <h4>Sucursales</h4>
+            <ul>
+                <li><a href="#" target="blank">Acambaro</a></li>
+                <li><a href="#" target="blank">León</a></li>
+                <li><a href="#" target="blank">Irapuato</a></li>
+                <li><a href="#" target="blank">Celaya</a></li>
+            </ul>
+
+            <h4>Productos</h4>
+            <label for="Productos">Elige tu favorito</label>
+            <input list="Productos">
+            <datalist id="Productos">
+                <option value="Pasteleria">
+                <option value="Galletas">
+                <option value="Bocadillos">
+                <option value="Pedidos Especiales">
+            </datalist>
+        </nav>
+
+        <article>
+            <h1>Pasteleria El Bizcocho</h1>
+            <p>Pasteleria tradicional nacida en la ciudad de Acambaro, al sur del estado de Guanajuato,cuenta con un excelente surtido de pan dulce, asi como de frances, pan de caja, etc.</p>
+            <!-- Parrafos -->
+            <br><p>Nuestro delicioso pan dulce se realiza con la tradicional receta familiar utilizada desde 1950, por el señor fulanito de tal, de esta forma continuamos con la tradicion familiar de la panaderia tradicional, para el año 2000 nos surge la inquietud de abrir nuestra propia panaderia la cual vio la luz hasta 2010, continuando con las recetas tradicionales pero perfeccionandolas con nuestro toque</p> 
+            <br><p>Ahora para ustedes les traemos ademas de los pasteles tradicionales una propuesta distinta con la venta de reposteria francesa </p>
+            <!-- Links / Enlaces -->
+            <a href="https://i.imgur.com/M4UHMOQ.jpeg" target="blank">pastel mamalon</a>
+            <br>
+            <!-- Imágenes -->
+            <img src="https://i.imgur.com/M4UHMOQ.jpeg" alt="pastel nude" width="350px" height="500px"> <br>
+            <br><br>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/ib1V_Z9sjHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+
+            <hr>
+
+            <!-- Tablas -->
+            <table>
+                <h3> Sucursales</h3>
+                <tr>
+                    <td>Acambaro</td>
+                    <td>León</td>
+                    <td>Irapuato</td>
+                    <td>Celaya</td>
+                </tr>
+                <tr>
+                    <td><br>Zona Centro s/n <br><br> (460)1234567</td>
+                    <td><br>Zona Centro s/n <br><br> (460)1234567</td>
+                    <td><br>Zona Centro s/n <br><br> (460)1234567</td>
+                    <td><br>Zona Centro s/n <br><br> (460)1234567</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <!-- Listas -->
+            <ul>
+                <li>Pasteleria</li>
+                <li>Galletas</li>
+                <li>Bocadillos dulces</li>
+                <li>pastelillos personales</li>
+            </ul>
+        
+            <ol>
+                <li>Pastel de merengue</li>
+                <li>Pastel 3 leches</li>
+                <li>Pastel con fondant</li>
+            </ol>
+        
+            <dl>
+                <dt>Pastel de merengue</dt>
+                <dd>- Pastel de bizcocho tradicional con cubierta de merengue italiano </dd>
+                <dt>Pstel 3 leches</dt>
+                <dd>- Pastel de bizcocho tradicional remojado en 3 leches y cubierto con crema batida</dd>
+                <dt>Pstel con fondant</dt>
+                <dd>- Pastel de bizcocho tipo panque relleno de mermelada y cubierto con fondant</dd>
+            </dl>
+                      
+            <hr>
+            
+            <!-- Tipos de Inputs -->
+            <h2>Registro en plataforma</h2>
+            <label for="correo1">Correo</label><br>
+            <input type="email" id="correo1" name="correo1"><br><br>
+            
+            <label for="psw1">Password</label><br>
+            <input type="password" id="psw1" name="psw1"><br><br>
+    
+            <label for="numero1">Número</label><br>
+            <input type="number" id="numero1" name="numero1"><br><br>
+            
+            <label for="tel1">Teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    
+            <label for="url1">redes sociales</label><br>
+            <input type="url" id="url1" name="url1"><br><br>
+            
+            <hr>
+
+            <!-- Formularios -->
+            <h2>Ejemplo de Formulario</h2>
+            <form action="/accion.js" id="form1" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+
+            <hr>
+
+            <h2>Selección</h2>
+            <label for="Pasteles">Elección de Pastel</label>
+            <select id="Pasteles" name="Pasteles">
+                <option value="vacio">vacio</option>
+                <option value="merengue">Pastel de merengue</option>
+                <option value="3leches">Pastel de 3 leches</option>
+                <option value="fondant">Pastel de Fondant</option>
+            </select>
+
+            <h2>Seleccion de Bizcocho</h2><br>
+            <input type="checkbox" id="bread1" name="bread1" value="Vainilla">
+            <label for="topping1">Vainilla</label><br>
+            <input type="checkbox" id="bread2" name="bread2" value="Chocolate">
+            <label for="topping2">Chocolate</label><br>
+            <input type="checkbox" id="bread3" name="bread3" value="Conbinado">
+            <label for="topping3">Combinado</label><br><br>
+    
+            <h2>Selección de Relleno</h2><br>
+            <input type="radio" id="Fresa" name="relleno" value="Fresa">
+            <label for="Fresa">Mermelada de fresa</label><br>
+            <input type="radio" id="Durazno" name="relleno" value="Durazno">
+            <label for="Durazno">Mermelada de Durazno</label><br>
+            <input type="radio" id="Crema" name="relleno" value="Crema">
+            <label for="Crema">Crema</label><br><br>
+
+            <h1>Datos adicionales a su orden</h1>
+            <!-- Labels / Etiquetas -->
+            <label for="Input1">Indicaciones a considerar</label>
+            <br>
+            <!-- Entradas / Inputs -->
+            <input type="text" id="Input1" name="Input1">
+            <br><br>
+
+            <hr>
+            
+            <h2>Anexe copia de comprobante de pago</h2><br>
+            <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+            <hr>    
+    
+            <h2>Lugar de entrega y/o recolección</h2>
+            <label for="ciudad">Elige tu sucursal</label><br>
+            <input list="ciudad">
+            <datalist id="ciudad">
+                <option value="Acambaro">
+                <option value="León">
+                <option value="Irapuato">
+                <option value="Celaya">
+            </datalist>
+            <br><br>
+
+            <hr>
+    
+            <h2>Input de Fecha</h2><br>
+            <input type="date" id="fecha1" name="fecha1"><br>
+            <input type="datetime-local" id="fecha2" name="fecha2"><br>
+            <input type="week" id="fecha3" name="fecha3"><br>
+            <input type="time" id="fecha4" name="fecha4"><br>
+            <input type="month" id="fecha5" name="fecha5"><br><br>
+            
+            <hr>
+    
+            <h2>Input de botón</h2>
+            <input type="reset"><br>
+            <input type="submit"><br>
+            <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Gracias por su compra');"><br><br>
+    
+            <hr>
+
+         </article>
+    </section>
+
+    <footer>
+        <p>debe aparecer redes sociales, metodos de pago alternativos, información de contacto</footer></p>
+    </footer>
+</body>
+</html>
